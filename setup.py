@@ -9,6 +9,14 @@ setup(
     install_requires=[],
     eager_resources=["*"],
     include_package_data=True,
+    package_data={
+        "libero": [
+            "libero/bddl_files/**/*",
+            "libero/assets/**/*",
+            "libero/init_files/**/*",
+            "datasets/**/*",
+        ]
+    },
     python_requires=">=3",
     description="LIBERO-plus: In-Depth Robustness Analysis For Vision-Language-Action Models",
     author="Anonymous",
